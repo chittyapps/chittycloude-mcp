@@ -1,0 +1,47 @@
+{
+  "name": "@chittyapps/chittycloud-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./working-index.js",
+  "bin": {
+    "chittycloud-mcp": "./working-index.js"
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">= 10"
+  },
+  "scripts": {
+    "dev": "node working-index.js",
+    "start": "node working-index.js",
+    "build": "chmod +x ./working-index.js",
+    "clean": "echo 'Nothing to clean'",
+    "test": "run-s test:*",
+    "test:lint": "eslint .",
+    "test:tsc": "tsc --noEmit",
+    "server-stdio": "node working-index.js",
+    "server-http": "MCP_HTTP_MODE=true node working-index.js --http"
+  },
+  "description": "ChittyCloud MCP - Universal Cloud Platform Operations with ChittyID Integration",
+  "keywords": ["mcp", "cloudflare", "vercel", "railway", "deployment", "chittyid", "chittyscore"],
+  "author": "ChittyApps",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chittyapps/chittycloud-mcp"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.4",
+    "@cloudflare/workers-types": "^4.20241106.0",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "zod": "^3.24.4",
+    "pino": "^9.7.0",
+    "pino-pretty": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.7",
+    "eslint": "^9.15.0",
+    "typescript": "~5.8.2",
+    "npm-run-all2": "^8.0.1"
+  }
+}

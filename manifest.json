@@ -1,0 +1,48 @@
+{
+  "name": "ChittyCloud Universal Deployment",
+  "version": "1.0.0",
+  "description": "Universal cloud platform operations with ChittyID integration. Deploy to Cloudflare, Vercel, Railway, and more with a single interface.",
+  "author": "ChittyApps",
+  "license": "MIT",
+  "homepage": "https://chitty.cc/cloud",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chittyapps/chittycloud-mcp"
+  },
+  "mcp": {
+    "server": {
+      "stdio": {
+        "command": "node",
+        "args": ["--experimental-strip-types", "index.ts"],
+        "env": {
+          "CHITTY_API_KEY": ""
+        }
+      },
+      "http": {
+        "url": "http://localhost:3000",
+        "env": {
+          "MCP_HTTP_MODE": "true",
+          "CHITTY_API_KEY": ""
+        }
+      }
+    }
+  },
+  "categories": ["deployment", "cloud", "infrastructure", "devops"],
+  "tags": ["cloudflare", "vercel", "railway", "deployment", "chittyid", "universal"],
+  "capabilities": {
+    "tools": [
+      "deploy",
+      "platform-status", 
+      "cost-compare",
+      "team-sync",
+      "reputation-score",
+      "optimize-config"
+    ],
+    "resources": [
+      "deployment-history",
+      "platform-configs", 
+      "team-settings",
+      "reputation-data"
+    ]
+  }
+}
