@@ -1,5 +1,5 @@
 {
-  "name": "ChittyCloud Universal Deployment",
+  "name": "ChittyCloude™ Universal Deployment",
   "version": "1.0.0",
   "description": "Universal cloud platform operations with ChittyID integration. Deploy to Cloudflare, Vercel, Railway, and more with a single interface.",
   "author": "ChittyApps",
@@ -7,7 +7,7 @@
   "homepage": "https://chitty.cc/cloud",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chittyapps/chittycloud-mcp"
+    "url": "https://github.com/chittyapps/chittycloude-mcp"
   },
   "mcp": {
     "server": {

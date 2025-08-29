@@ -1,14 +1,14 @@
-# 🚀 ChittyCloud MCP Installation Guide
+# 🚀 ChittyCloude™e™ MCP Installation Guide
 
 ## Quick Install for Claude Code
 
 ### Method 1: NPX (Recommended)
 ```bash
 # Test the extension directly
-npx @chittyapps/chittycloud-mcp@latest
+npx @chittyapps/chittycloude-mcp@latest
 
 # Add to Claude Code permanently  
-claude mcp add chittycloud -- npx @chittyapps/chittycloud-mcp@latest
+claude mcp add chittycloud -- npx @chittyapps/chittycloude-mcp@latest
 ```
 
 ### Method 2: Local Installation
@@ -32,7 +32,7 @@ Add to your Claude Code MCP configuration file:
   "mcpServers": {
     "chittycloud": {
       "command": "npx",
-      "args": ["@chittyapps/chittycloud-mcp@latest"]
+      "args": ["@chittyapps/chittycloude-mcp@latest"]
     }
   }
 }
@@ -63,16 +63,16 @@ Add to your Claude Code MCP configuration file:
 ### Basic Test
 ```bash
 # If using npx
-echo '{"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {"name": "ping", "arguments": {}}}' | npx @chittyapps/chittycloud-mcp@latest
+echo '{"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {"name": "ping", "arguments": {}}}' | npx @chittyapps/chittycloude-mcp@latest
 
-# Should return: {"result":{"content":[{"type":"text","text":"🎉 ChittyCloud MCP is working! Ready to deploy to the cloud."}]}...
+# Should return: {"result":{"content":[{"type":"text","text":"🎉 ChittyCloude™ MCP is working! Ready to deploy to the cloud."}]}...
 ```
 
 ### In Claude Code
 After installation, you can use natural language:
 
-- "Test ChittyCloud connection with ping"
-- "Show me ChittyCloud help"
+- "Test ChittyCloude™ connection with ping"
+- "Show me ChittyCloude™ help"
 - "Authenticate with Cloudflare using token abc123 and account def456"
 - "Deploy my portfolio-site to Vercel"
 
@@ -100,7 +100,7 @@ After installation, you can use natural language:
 ### Debug Mode
 ```bash
 # Enable debug logging
-DEBUG=chittycloud:* npx @chittyapps/chittycloud-mcp@latest
+DEBUG=chittycloud:* npx @chittyapps/chittycloude-mcp@latest
 
 # Check log file
 tail -f /tmp/chittycloud-mcp.log
@@ -150,4 +150,4 @@ tail -f /tmp/chittycloud-mcp.log
 - Extensible architecture
 - Marketplace ready
 
-Ready to deploy to the cloud! 🌩️
+Ready to deploy to the cloud! ☁️

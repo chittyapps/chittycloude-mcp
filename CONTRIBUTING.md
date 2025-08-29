@@ -1,6 +1,6 @@
-# Contributing to ChittyCloud MCP
+# Contributing to ChittyCloude™ MCP
 
-We welcome contributions to ChittyCloud MCP! This document provides guidelines for contributing to the project.
+We welcome contributions to ChittyCloude™ MCP! This document provides guidelines for contributing to the project.
 
 ## 🚀 Getting Started
 
@@ -217,4 +217,4 @@ Contributors will be:
 - Join our community chat (link coming soon)
 - Email support@chitty.cc for urgent issues
 
-Thank you for contributing to ChittyCloud MCP! 🌩️
+Thank you for contributing to ChittyCloude™ MCP! ☁️

@@ -1,10 +1,10 @@
 {
-  "name": "@chittyapps/chittycloud-mcp",
+  "name": "@chittyapps/chittycloude-mcp",
   "version": "1.0.0",
   "type": "module",
   "main": "./working-index.js",
   "bin": {
-    "chittycloud-mcp": "./working-index.js"
+    "chittycloud-mcp": "working-index.js"
   },
   "engines": {
     "node": ">=22.0.0",
@@ -21,13 +21,21 @@
     "server-stdio": "node working-index.js",
     "server-http": "MCP_HTTP_MODE=true node working-index.js --http"
   },
-  "description": "ChittyCloud MCP - Universal Cloud Platform Operations with ChittyID Integration",
-  "keywords": ["mcp", "cloudflare", "vercel", "railway", "deployment", "chittyid", "chittyscore"],
+  "description": "ChittyCloude™ MCP - Universal Cloud Platform Operations with ChittyID Integration",
+  "keywords": [
+    "mcp",
+    "cloudflare",
+    "vercel",
+    "railway",
+    "deployment",
+    "chittyid",
+    "chittyscore"
+  ],
   "author": "ChittyApps",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chittyapps/chittycloud-mcp"
+    "url": "git+https://github.com/chittyapps/chittycloude-mcp.git"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.17.4",

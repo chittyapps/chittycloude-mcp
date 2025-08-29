@@ -21,7 +21,7 @@ const logger = pino({
     targets: [
       {
         target: 'pino/file',
-        options: { destination: join(tmpdir(), 'chittycloud-mcp.log') },
+        options: { destination: join(tmpdir(), 'chittycloude-mcp.log') },
         level: 'info'
       }
     ]
@@ -144,7 +144,7 @@ class CloudflareAdapter {
         headers: {
           'Authorization': `Bearer ${this.apiToken}`,
           'Content-Type': 'application/json',
-          'User-Agent': 'ChittyCloud-MCP/1.0.0'
+          'User-Agent': 'ChittyCloude-MCP/1.0.0'
         }
       });
 
@@ -256,7 +256,7 @@ class VercelAdapter {
         headers: {
           'Authorization': `Bearer ${this.apiToken}`,
           'Content-Type': 'application/json',
-          'User-Agent': 'ChittyCloud-MCP/1.0.0'
+          'User-Agent': 'ChittyCloude-MCP/1.0.0'
         }
       });
 
@@ -389,13 +389,13 @@ function createSecureTool(name, description, inputSchema, handler) {
 // Secure tools
 createSecureTool(
   'ping',
-  'Test that the ChittyCloud MCP server is working',
+  'Test that the ChittyCloude™ MCP server is working',
   {},
   async () => {
     return {
       content: [{
         type: 'text',
-        text: '🎉 ChittyCloud MCP is working! Security-hardened version ready.'
+        text: '🎉 ChittyCloude™ MCP is working! Security-hardened version ready.'
       }]
     };
   }
@@ -513,7 +513,7 @@ createSecureTool(
     return {
       content: [{
         type: 'text',
-        text: `🌩️ ChittyCloud Universal Deployment MCP (Security-Hardened)
+        text: `☁️ ChittyCloude™ Universal Deployment MCP (Security-Hardened)
 
 📋 Available Commands:
 • ping - Test connection
@@ -543,14 +543,14 @@ Example Usage:
 "Deploy my test-app to Vercel"
 "Check status of deployment xyz789 on Cloudflare"
 
-Ready to deploy securely! 🔐🎯`
+Ready to deploy securely! 🔐☁️`
       }]
     };
   }
 );
 
 // Start server with enhanced error handling
-logger.info('Starting ChittyCloud MCP (Security-Hardened) in stdio mode');
+logger.info('Starting ChittyCloude™ MCP (Security-Hardened) in stdio mode');
 const transport = new StdioServerTransport();
 
 // Add JSON parsing error handling
@@ -585,10 +585,10 @@ process.stdout.write = function(chunk, encoding, callback) {
 
 server.connect(transport)
   .then(() => {
-    logger.info(`ChittyCloud MCP server (Security-Hardened) version ${VERSION} started successfully`);
+    logger.info(`ChittyCloude™ MCP server (Security-Hardened) version ${VERSION} started successfully`);
   })
   .catch((error) => {
-    logger.error(`Failed to start ChittyCloud MCP server: ${error.message}`);
+    logger.error(`Failed to start ChittyCloude™ MCP server: ${error.message}`);
     process.exit(1);
   });
 

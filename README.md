@@ -1,4 +1,4 @@
-# ChittyCloud Universal Deployment MCP
+# ChittyCloude™ Universal Deployment MCP
 
 A Model Context Protocol (MCP) server that provides universal cloud platform deployment capabilities. Deploy to Cloudflare Workers/Pages, Vercel, Railway, and more with a single interface.
 
@@ -24,7 +24,7 @@ A Model Context Protocol (MCP) server that provides universal cloud platform dep
 
 1. Install the extension:
 ```bash
-claude mcp add chittycloud-mcp -- npx @chittyapps/chittycloud-mcp@latest
+claude mcp add chittycloude-mcp -- npx @chittyapps/chittycloude-mcp@latest
 ```
 
 2. Or add manually to your MCP configuration:
@@ -33,7 +33,7 @@ claude mcp add chittycloud-mcp -- npx @chittyapps/chittycloud-mcp@latest
   "mcpServers": {
     "chittycloud": {
       "command": "npx",
-      "args": ["@chittyapps/chittycloud-mcp@latest"]
+      "args": ["@chittyapps/chittycloude-mcp@latest"]
     }
   }
 }
@@ -43,7 +43,7 @@ claude mcp add chittycloud-mcp -- npx @chittyapps/chittycloud-mcp@latest
 
 1. Start the server:
 ```bash
-MCP_HTTP_MODE=true npx @chittyapps/chittycloud-mcp@latest --http
+MCP_HTTP_MODE=true npx @chittyapps/chittycloude-mcp@latest --http
 ```
 
 2. Add to your MCP client:
@@ -278,12 +278,12 @@ Get detailed analytics for a project
 
 Enable detailed logging:
 ```bash
-DEBUG=chittycloud:* npx @chittycorp/chittycloud-mcp@latest
+DEBUG=chittycloud:* npx @chittycorp/chittycloude-mcp@latest
 ```
 
 Check log files:
-- Info: `/tmp/chittycloud-mcp.log`
-- Errors: `/tmp/chittycloud-mcp-error.log`
+- Info: `/tmp/chittycloude-mcp.log`
+- Errors: `/tmp/chittycloude-mcp-error.log`
 
 ## 🛣️ Roadmap
 
@@ -323,10 +323,10 @@ MIT License - see [LICENSE](LICENSE) file for details.
 ## 🆘 Support
 
 - 📖 [Documentation](https://docs.chitty.cc/cloud)
-- 🐛 [Report Issues](https://github.com/chittyapps/chittycloud-mcp/issues)
-- 💬 [Discussions](https://github.com/chittyapps/chittycloud-mcp/discussions)
+- 🐛 [Report Issues](https://github.com/chittyapps/chittycloude-mcp/issues)
+- 💬 [Discussions](https://github.com/chittyapps/chittycloude-mcp/discussions)
 - 📧 Email: support@chitty.cc
 
 ---
 
-**ChittyCloud MCP** - Universal cloud deployment, unified experience. 🌩️
+**ChittyCloude™ MCP** - Universal cloud deployment, unified experience. ☁️
