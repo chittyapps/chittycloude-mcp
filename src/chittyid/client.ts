@@ -7,7 +7,7 @@ export class ChittyIDClient {
   private authToken: string | null = null;
 
   constructor(
-    private readonly apiUrl: string = process.env.CHITTYID_API_URL || 'https://api.chitty.id',
+    private readonly apiUrl: string = process.env.CHITTYID_API_URL || 'https://id.chitty.cc',
     private readonly apiKey: string = process.env.CHITTY_API_KEY || ''
   ) {
     this.api = axios.create({
